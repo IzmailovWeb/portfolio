@@ -12,21 +12,23 @@ export const Contact = () => {
         e.preventDefault();
         if (!form.current) return
 
-        emailjs.sendForm('service_et7lazz', 'service_et7lazz', form.current, 'jFVC_dsI-O4mcmbJK')
+        emailjs.sendForm('service_et7lazz', 'template_8nu0d7i', form.current, 'jFVC_dsI-O4mcmbJK')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
+        e.target.reset()
     };
     return (
         <StyledContact>
             <Container>
                 <StyledForm ref={form} onSubmit={sendEmail}>
                     <SectionTitle>Contact</SectionTitle>
-                    <Field placeholder="Name" name={'user_name'}/>
-                    <Field placeholder="Subject" name={'subject'}/>
-                    <Field  placeholder="Message" as="textarea" name={'message'}/>
+                    <Field required placeholder="Name" name={'user_name'}/>
+                    <Field required placeholder="Email" name={'email'}/>
+                    <Field required placeholder="Subject" name={'subject'}/>
+                    <Field required  placeholder="Message" as="textarea" name={'message'}/>
                     <Button type="submit">Send message</Button>
                 </StyledForm>
             </Container>
