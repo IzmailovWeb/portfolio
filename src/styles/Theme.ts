@@ -16,5 +16,10 @@ export const theme = {
         socialHoverColor:"#1F1F20"
 
 
+    },
+    media:{
+        tablet:'screen and (max-width:768px)',
+        mobile:'screen and (max-width:576px)'
+
     }
  }

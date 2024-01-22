@@ -11,25 +11,20 @@ export const Footer = () => {
                 <LastName>Izmailov</LastName>
                 <SocialList>
                     <SocialItem>
-                        <SocialLink>
+                        <SocialLink href={'https://www.instagram.com/iz_viktor?igsh=MThwNDd0Z3J0OHVrbw%3D%3D&utm_source=qr'}>
                             <Icon iconId={"instagramSvg"} height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"}/>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
-                        <SocialLink>
+                        <SocialLink href={'https://t.me/izviktor'}>
                             <Icon iconId={"telegramSvg"} height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"}/>
                         </SocialLink>
                     </SocialItem>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon iconId={"vkSvg"} height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"}/>
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon iconId={"llinkedinSvg"} height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"}/>
-                        </SocialLink>
-                    </SocialItem>
+                    {/*<SocialItem>*/}
+                    {/*    <SocialLink href={'www.linkedin.com/in/viktor-undefined-b14a232a8'} >*/}
+                    {/*        <Icon iconId={"llinkedinSvg"} height={"21px"} width={"21px"} viewBox={"0 0 21px 21px"}/>*/}
+                    {/*    </SocialLink>*/}
+                    {/*</SocialItem>*/}
                 </SocialList>
                 <Copyright>© 2023 Victor Izmailov, All Rights Reserved.</Copyright>
             </FlexWrapper>

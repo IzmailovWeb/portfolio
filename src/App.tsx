@@ -1,8 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Header} from "./layout/header/Header";
-import styled from "styled-components";
 import {Main} from "./layout/sections/main/Main";
 import {Skills} from "./layout/sections/skills/Skills";
 import {Works} from "./layout/sections/works/Works";

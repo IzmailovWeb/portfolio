@@ -4,14 +4,14 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Button} from "../../../components/Button";
 import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import { theme } from '../../../styles/Theme';
 
 export const  Slogan = () => {
     return (
         <StylledSlogan>
             <Container>
-                <FlexWrapper direction={"column"} align={"center"}>
-                    <SectionTitle>I Am Available For Freelance</SectionTitle>
-                    <Button>Hire me</Button>
+                <FlexWrapper justiify={'center'} align={"center"}>
+                    <SectionTitle>“Translating ideas into code: my passion for creating interfaces that captivate and code that inspires.”</SectionTitle>
                 </FlexWrapper>
             </Container>
         </StylledSlogan>
@@ -19,8 +19,11 @@ export const  Slogan = () => {
 };
 
 const StylledSlogan = styled.section`
-    min-height: 30vh;
-  height: 100$;
-  background-color: aqua;
+  height: 100%;
+    @media ${theme.media.mobile} {
+        & h2{
+            font-size: 26px;
+        }
 
+    }
 `
